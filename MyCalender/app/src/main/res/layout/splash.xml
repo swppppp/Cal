@@ -14,8 +14,30 @@
             android:layout_marginLeft="50dp"
             android:fontFamily="sans-serif-condensed"
             android:textStyle="bold"
+            android:textColor="#190000"
             android:textSize="30sp"
             app:layout_constraintVertical_bias="0.3"
             android:text="MYCALENDAR"/>
+    <View
+        android:id="@+id/div"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/name_tv"
+        app:layout_constraintTop_toBottomOf="@+id/name_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/stroke"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/name_tv"
+        app:layout_constraintTop_toBottomOf="@id/div"
+        android:layout_marginTop="15dp"
+        android:textColor="#595959"
+        android:textSize="25sp"
+        android:text="everyday is\na new day"/>
+
 
 </android.support.constraint.ConstraintLayout>
