@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'androidx.navigation.safeargs' // for safe argumnets
 
 android {
     compileSdkVersion 28
@@ -37,4 +38,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // navigation
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha07'
+    implementation 'android.arch.navigation:navigation-ui:1.0.0-alpha07'
 }
